@@ -15,8 +15,9 @@ author: Seungmi Oh
 
 navbar-links:
   About Me: "aboutme"
-  Posts: ""
-
+  Category:
+    - Study: "/category/study"
+    - Project: "/category/project"
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
@@ -70,7 +71,7 @@ social-network-links:
 share-links-active:
 #   twitter: true
 #   facebook: true
-  linkedin: true
+  # linkedin: true
 #   vk: false
 
 # How to display the link to your website in the footer
