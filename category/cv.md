@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Project
+title: project
 permalink: category/project
 ---
