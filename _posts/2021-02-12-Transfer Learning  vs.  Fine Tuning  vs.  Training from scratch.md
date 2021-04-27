@@ -3,11 +3,9 @@ title: "[DL 101] Transfer Learning  vs.  Fine Tuning  vs.  Training from scratch
 excerpt: "What is transfer learning and why?"
 date: 2021-02-12 15:000 -0400
 author : 오승미
-categories :
-  - deep-learning
+category: [DL101]
 
 tags :
-  - deep-learning
   - transfer-learning
   - fine-tuning
   - Training from scratch

@@ -3,10 +3,8 @@ title: "[DL 101] Object Recognition Terminology"
 excerpt: "What is object localization, object detection, semantic segmentation and instance segmentation?"
 date: 2021-02-11 13:000 -0400
 author : 오승미
-categories :
-  - deep-learning
+category: [CV, DL101]
 tags :
-  - deep-learning
   - object-recognition
   - object-detection
   - segmentation

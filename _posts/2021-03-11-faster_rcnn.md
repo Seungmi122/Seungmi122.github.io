@@ -5,10 +5,10 @@ date: 2021-03-11 02:000 -0400
 author : 오승미
 use_math: true
 tags :
+- paper review
 - faster rcnn
 - computer vision
-categories:
- - computer vision
+category: [CV]
 
 
 ---

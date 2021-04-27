@@ -7,8 +7,7 @@ use_math: true
 tags :
 - opencv
 
-categories:
- - computer vision
+category: [CV]
 ---
 
 

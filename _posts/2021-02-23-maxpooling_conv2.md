@@ -3,10 +3,8 @@ title: "[DL 101] Maxpooling? Convolutions?"
 excerpt: "Can we replace maxpooling with convolutional layers?"
 date: 2021-02-22 15:000 -0400
 author : 오승미
-categories :
-  - deep-learning
+category: [DL101]
 tags :
-  - deep-learning
   - Maxpooling
   - Convolution
 ---

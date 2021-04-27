@@ -3,10 +3,8 @@ title: "[DL 101] Upsampling"
 excerpt: "In many cases including image segmentation, a model consists of downsampling and upsampling parts and the latter restore the feature map to the input sized image. There are two types of upsampling using torch: UpSampling, ConvTranspose2D."
 date: 2021-02-22 15:000 -0400
 author : 오승미
-categories :
-  - deep-learning
+category: [DL101]
 tags :
-  - deep-learning
   - Upsampling
   - ConvTransposed2D
 ---

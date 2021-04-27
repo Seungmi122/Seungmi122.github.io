@@ -3,10 +3,8 @@ title: "[DL 101] Global Average Pooling"
 date: 2021-02-10 12:000 -0400
 excerpt: "Alternatives to the Fully Connected Layer(FC layer)"
 author : 오승미
-categories :
-  - deep-learning
+category: [DL101]
 tags :
-  - deep-learning
   - FC layer
   - GAP
 

@@ -4,6 +4,7 @@ excerpt: "Today, we are going to know how to crawl iherb using Python, especiall
 date: 2021-03-11 22:000 -0400
 author : 오승미
 use_math: true
+category: [DL101]
 tags :
 - web crawling
 - selenium
@@ -345,4 +346,3 @@ Remember that crawling process is quite time consuming, with tons of exceptions 
 ```python
 crawl_n_pages(from_page=2, to_page=4)
 ```
-

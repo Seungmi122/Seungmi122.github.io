@@ -4,11 +4,9 @@ excerpt: "What is learning rate scheduler?"
 date: 2021-02-25 16:000 -0400
 author : 오승미
 use_math: true
-categories :
-  - deep-learning
+category: [DL101]
 tags :
   - learning-rate-scheduler
-  - deep-learning
 
 ---
 

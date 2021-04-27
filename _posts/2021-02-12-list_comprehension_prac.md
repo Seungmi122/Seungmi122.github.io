@@ -3,8 +3,7 @@ title: "[DL 101] List comprehension"
 date: 2021-02-12 14:000 -0400
 excerpt: "Let's get familiar with list comprehension, instead of for loops"
 author : 오승미
-categories :
-  - deep-learning
+category: [DL101]
 tags :
   - List-comprehension
   - python
