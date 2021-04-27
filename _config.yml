@@ -196,8 +196,11 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
-kramdown:
-  input: GFM
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
