@@ -1,5 +1,5 @@
 ---
 layout: category
-title: project
-permalink: category/project
+title: CV
+permalink: category/cv
 ---
