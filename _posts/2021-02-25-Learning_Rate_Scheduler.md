@@ -3,7 +3,7 @@ title: "[DL 101] Learning Rate Scheduler"
 excerpt: "What is learning rate scheduler?"
 date: 2021-02-25 16:000 -0400
 author : 오승미
-use_math: true
+usemathjax: true
 category: [DL101]
 tags :
   - learning-rate-scheduler
