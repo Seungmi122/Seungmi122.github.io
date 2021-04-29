@@ -33,11 +33,11 @@ Resize the original image to create an image pyramid,
 
 Apply a gaussian blur to each image with different $\sigma$ settings. The higher the octave is, the larger the $\sigma$ value. Definitely images located at higher octave seem much blurry.
 
-![img3](/assets/2021-04-29-img2.png)
+![img3](/assets/2021-04-29-img3.png)
 
 With those blurred images, let's find out **Difference of Gaussians (DoG)**. Take a difference between image pairs with different $\sigma$ values at one octave.
 
-![img_diff](/assets/2021-04-29-img_diff.png)
+![img_diff](/assets/2021-04-29-img_diff.jpeg)
 
 DoG ends up conveying edge and corner features (local extreme) of a given image.
 
