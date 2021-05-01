@@ -1,16 +1,22 @@
 ---
-title: "Image Retrieval"
+title: "[Paper Review] Particular Object Retrieval with Integral Max-pooling of CNN Activations"
 excerpt: "Briefly introduce what Seq2seq is"
-date: 2021-03-24 14:000 -0400
-author : 오승미
+date: 2021-04-30 01:000 -0400
 use_math: true
 tags :
-- seq2seq
+- image retrieval
 - paper review
 
-category: [NLP]
+category: [CV]
 
 
 
 ---
 
+
+
+
+
+## Reference
+
+- https://arxiv.org/pdf/1511.05879v1.pdf
