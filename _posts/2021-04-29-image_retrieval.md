@@ -1,7 +1,7 @@
 ---
 title: "[Paper Review] Particular Object Retrieval with Integral Max-pooling of CNN Activations"
-excerpt: "Briefly introduce what Seq2seq is"
-date: 2021-04-30 01:000 -0400
+excerpt: "How to extract features from an image?"
+date: 2021-05-06 01:000 -0400
 use_math: true
 tags :
 - image retrieval
@@ -14,6 +14,10 @@ category: [CV]
 ---
 
 
+
+
+
+gr
 
 
 

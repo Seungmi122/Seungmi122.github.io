@@ -20,12 +20,19 @@ Before we start, there are three ways to represent a drug:
 - Text-based(SMILES, InChIKey, SELFIES)
 - Graph structure
 
+------
+
 
 
 ## 1. Drug properties prediction
 
 - Input: A drug (small molecule)
+
 - Output: 0–1 label to indicate whether a drug has certain **properties** or not. (multi-label classification/regression task)
+
+  
+
+-----
 
 
 
@@ -38,12 +45,14 @@ Therefore, whether a given drug can change the protein structure or not is impor
 *Goal* : Predict whether a given drug has a relationship with our target protein.
 
 - Description: Binary classification that predicts the binding affinity of compound and protein (it can be formalized as a regression task or binary classification)
-
 - Inputs: Compounds and proteins representation
-
 - Output: 0–1 or a real number in [0–1]
 
-  
+
+
+------
+
+
 
 ## 3. De Novo Drug Design
 
@@ -52,6 +61,8 @@ If we are only interested in compounds with required properties, we can simulate
 Plus, many researchers have combined reinforcement learning for penalizing unideal(unrealistic) molecules and they evaluate their generative models by multiple objects including drug-likeness, toxicity. 
 
 
+
+------
 
 
 
