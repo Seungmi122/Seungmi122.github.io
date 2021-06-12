@@ -34,7 +34,7 @@ i.e, we expect 96 are correctly classified when 100 predictions are given.
 
 이게 원래는 문제가 안되다가 - 옛날 모델은 calibration이 잘됐었는데 - 
 
-오히려 요즘의 모델들이 calibration 이 잘안돼. 너무 highly confident하더라<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 5.21.59 PM.png" alt="Screen Shot 2021-06-01 at 5.21.59 PM" style="zoom:50%;" />
+오히려 요즘의 모델들이 calibration 이 잘안돼. 너무 highly confident하더라<img src="/assets/2021-06-01-1.png" alt="Screen Shot 2021-06-01 at 5.21.59 PM" style="zoom:50%;" />
 
 ResNet 같은 경우 accuracy가 엄청 잘나오지만 핑크색 Gap 이 엄청 크다 == poorly calibrated 되어있다. 그래서 이 부분을 보완해줄 필요성이 두각 되었다. 
 
@@ -56,7 +56,7 @@ difference in expectations between confidence and accuracy
 
 
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 5.01.41 PM.png" alt="Screen Shot 2021-06-01 at 5.01.41 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-2.png" alt="Screen Shot 2021-06-01 at 5.01.41 PM" style="zoom:50%;" />
 
 Where Y_hat is predicted class and P_hat is its associated confidence (prob of correctness). our aim is to correct P_hat to represent a true probability. 
 
@@ -64,7 +64,7 @@ Where Y_hat is predicted class and P_hat is its associated confidence (prob of c
 
 ECE를 사용. B는 그냥 bin. prediction을 구간별로 잘라서 사용.
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 5.07.24 PM.png" alt="Screen Shot 2021-06-01 at 5.07.24 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-3.png" alt="Screen Shot 2021-06-01 at 5.07.24 PM" style="zoom:50%;" />
 
 간단하게 생각하면 perfectly calibrated == (acc(B_m) == conf(B_m))
 
@@ -78,7 +78,7 @@ calibration에 영향을 끼치는 애들: depth, width, weight decay, bn
 
 
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 5.06.14 PM.png" alt="Screen Shot 2021-06-01 at 5.06.14 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-4.png" alt="Screen Shot 2021-06-01 at 5.06.14 PM" style="zoom:50%;" />
 
 
 
@@ -96,11 +96,11 @@ softmax를 단순하게
 
 **temperature scaling** 으로 조금 완화시켜보자. 그냥 단순하게 정말정말 단순하게 single scaling parameter T를 모든 class 에 대해서 사용하는거.  
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 6.02.36 PM.png" alt="Screen Shot 2021-06-01 at 6.02.36 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-5.png" alt="Screen Shot 2021-06-01 at 6.02.36 PM" style="zoom:50%;" />
 
 Test NLL이 overfit 하지 않게 끊어줘야 calibration이 잘된다. 저 grey area에 파란 선을 낮춰주고 싶은거야. 근데 early stopping은 아니고 다 한다음에 single scaler로 밑으로 내려버려. 약간 over confident 된 애를 완화시켜보자. 
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-05-31 at 10.31.04 PM.png" alt="Screen Shot 2021-05-31 at 10.31.04 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-6.png" alt="Screen Shot 2021-05-31 at 10.31.04 PM" style="zoom:50%;" />
 
 
 
@@ -112,13 +112,13 @@ Test NLL이 overfit 하지 않게 끊어줘야 calibration이 잘된다. 저 gre
 
 
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 5.13.36 PM.png" alt="Screen Shot 2021-06-01 at 5.13.36 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-7.png" alt="Screen Shot 2021-06-01 at 5.13.36 PM" style="zoom:50%;" />
 
  
 
 
 
-<img src="/Users/seungmi/Library/Application Support/typora-user-images/Screen Shot 2021-06-01 at 5.12.26 PM.png" alt="Screen Shot 2021-06-01 at 5.12.26 PM" style="zoom:50%;" />
+<img src="/assets/2021-06-01-8.png" alt="Screen Shot 2021-06-01 at 5.12.26 PM" style="zoom:50%;" />
 
 
 
